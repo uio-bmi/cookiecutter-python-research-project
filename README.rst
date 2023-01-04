@@ -83,31 +83,3 @@ After making a dev-branch, push it to Github and check that the Github actions a
 The Github actions are set up so that tests are run when changes are pushed to the dev-branch, and they will
 publish a package and make documentation when changes are pushed to master.
 
-
-
-
-Step 5
-********
-
-Depending on what you chose when you configured your project, you may need to do some additional steps.
-
-If you chose automatic pushing to PyPi:
-
-
-If you chose to have documentation built automatically:
-
-
-How to use
------------
-
-*
-
-This are the suggested guidelines:
-
-* All project dependencies should be specified in the `setup.py` file.
-* All development dependencies (e.g. tools and packages needed to run tests, make examples, etc) should be specified in `requirements_dev.txt`.
-    * Make sure that all developers install these requirements and preferrably pinpoint them to exact versions.
-* Put all tests in the test-directory
-* Run tests by running `make test` in the root directory of your projects or alternatively just run `pytest`.
-* Make the documentation by running
-
