@@ -5,27 +5,25 @@ Cookiecutter template for a scientific reserach project based on Python
 Features
 --------
 
-* Testing setup with ``unittest`` and ``python setup.py test`` or ``pytest``
+* Testing setup with  ``pytest``
 * Github actions for:
     * Automatic testing
     * Automatic bumping version and publish to PyPi for every push to master
     * Bulding Sphinx docs and a manuscript
-* Command line interface using Click (optional)
-
+* Command line interface using Typer (optional)
 
 
 How to use
 ----------
 
+
 Step 1: Install cookiecutter
-******************************
+****************************
 
 Install the latest Cookiecutter if you haven't installed it yet (this requires
 Cookiecutter 1.4.0 or higher)::
 
     pip install -U cookiecutter
-
-
 
 
 Step 2: Create your project
@@ -40,8 +38,9 @@ Step 3: Make a Github project
 
 Setup your project on Github. Create a new project on Github, initialize your repo locally and push it.
 
+
 Step 4: Install your project locally
-***************************************
+************************************
 
 Navigate to your project directory. Install the development requirements:
 
@@ -65,7 +64,7 @@ Step 5: If you chose to publish automatically to PyPi
     * Try pushing to master. Check that the Github Action for publishing PyPi package ran without errors. If it succeeded, you will now be able to find your package published on PyPi.
 
 Step 6: If you chose to automatically build documentation
-*************************************************************
+*********************************************************
 
     * Go to Settings on your project on Github. Choose `Pages` and select `Deply from branch` under `Source`.
     * Select the `gh-pages` branch and the `docs` folder and click Save.
@@ -74,10 +73,10 @@ Step 6: If you chose to automatically build documentation
 
 
 Step 7: Make a dev-branch
-**************************
+*************************
 
-Make a dev-branch. The idea is that all changes are pushed and synced as often as possible to the dev branch and that
-the master branch contains a more stable version of your project. Avoid creating too many other branches.
+Make a dev-branch. The idea is that all changes are pushed and synced as often as possible to the dev branch and thatt
+he master branch contains a more stable version of your project. Avoid creating too many other branches.
 
 After making a dev-branch, push it to Github and check that the Github actions are running and not failing.
 The Github actions are set up so that tests are run when changes are pushed to the dev-branch, and they will
