@@ -10,9 +10,9 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = [{%- if cookiecutter.command_line_interface|lower == 'click' %}'Click>=7.0',{%- endif %} ]
+requirements = [{%- if cookiecutter.have_a_command_line_interface|lower == 'y' %}'typer',{%- endif %} ]
 
-test_requirements = [{%- if cookiecutter.use_pytest == 'y' %}'pytest>=3',{%- endif %} ]
+test_requirements = ['pytest>=3', "hypothesis"]
 
 {%- set license_classifiers = {
     'MIT license': 'License :: OSI Approved :: MIT License',

@@ -61,15 +61,13 @@ lint: lint/flake8{%- if cookiecutter.use_black == 'y' %} lint/black{%- endif %} 
 test: ## run tests quickly with the default Python
 	pytest
 
-test-all: ## run tests on every Python version with tox
-	tox
+test-all: ## run pytest, doctests, examples
+	pytest --cov={{ cookiecutter.project_slug }} --cov-report html
+	pytest --cov={{ cookiecutter.project_slug }} --cov-report html --cov-append scripts/*_example.py
+	pytest --cov-report html --cov={{ cookiecutter.project_slug }} --cov-append --doctest-modules {{ cookiecutter.project_slug }}/
+	cd docs_source && make doctest
 
 coverage: ## check code coverage quickly with the default Python
-{%- if cookiecutter.use_pytest == 'y' %}
-	coverage run --source {{ cookiecutter.project_slug }} -m pytest
-{%- else %}
-	coverage run --source {{ cookiecutter.project_slug }} setup.py test
-{%- endif %}
 	coverage report -m
 	coverage html
 	$(BROWSER) htmlcov/index.html
