@@ -69,7 +69,12 @@ Step 6: If you chose to automatically build documentation
 
     * Go to Settings on your project on Github. Choose `Pages` and select `Deply from branch` under `Source`.
     * Select the `gh-pages` branch and the `docs` folder and click Save.
-    * Make some arbitrary change in a file in the `docs_source` directory and push to master.
+    * Make branch called `gh-pages` locally and push it. This will be the branch that Github uses to host the page and you will never use it locally:
+
+        git branch gh-pages
+        git push origin gh-pages
+
+    * Make some arbitrary change in a file in the `docs_source` directory on your master branch and push the changes.
     * Check that the github action for making documentation ran successfully. If it did, you will be able to find your documentation on https://[organization].github.io/[project-name]
 
 
