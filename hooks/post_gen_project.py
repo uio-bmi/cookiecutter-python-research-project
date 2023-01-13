@@ -12,9 +12,9 @@ if __name__ == '__main__':
 
     if '{{ cookiecutter.create_author_file }}' != 'y':
         remove_file('AUTHORS.rst')
-        remove_file('docs/authors.rst')
+        remove_file('docs_source/authors.rst')
 
-    if 'no' in '{{ cookiecutter.command_line_interface|lower }}':
+    if 'n' in '{{ cookiecutter.have_a_command_line_interface|lower }}':
         cli_file = os.path.join('{{ cookiecutter.project_slug }}', 'cli.py')
         remove_file(cli_file)
 

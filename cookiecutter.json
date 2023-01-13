@@ -8,7 +8,7 @@
   "pypi_username": "{{ cookiecutter.github_username }}",
   "version": "0.0.1",
   "use_black": "n",
-  "have_a_command_line_interace": "y",
+  "have_a_command_line_interface": "y",
   "create_author_file": "n",
   "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
 }
