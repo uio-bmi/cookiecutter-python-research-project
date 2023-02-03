@@ -10,5 +10,6 @@
   "use_black": "n",
   "have_a_command_line_interface": "y",
   "create_author_file": "n",
-  "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
+    "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"],
+    "_copy_without_render": [".github/workflows/*"]
 }
