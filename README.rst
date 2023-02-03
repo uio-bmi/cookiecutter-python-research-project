@@ -38,6 +38,8 @@ Step 3: Make a Github project
 
 Setup your project on Github. Create a new project on Github, initialize your repo locally and push it.
 
+* Do not add a Readme, .gitignore or anything else when creating cool.
+
 
 Step 4: Install your project locally
 ************************************
@@ -66,15 +68,15 @@ Step 5: If you chose to publish automatically to PyPi
 Step 6: If you chose to automatically build documentation
 *********************************************************
 
-    * Go to Settings on your project on Github. Choose `Pages` and select `Deply from branch` under `Source`.
-    * Select the `gh-pages` branch and the `docs` folder and click Save.
-    * Make branch called `gh-pages` locally and push it. This will be the branch that Github uses to host the page and you will never use it locally:
+* Go to Settings on your project on Github. Choose `Pages` and select `Deply from branch` under `Source`.
+* Select the `gh-pages` branch and the `docs` folder and click Save.
+* Make branch called `gh-pages` locally and push it. This will be the branch that Github uses to host the page and you will never use it locally:
 
-        git branch gh-pages
-        git push origin gh-pages
+    git branch gh-pages
+    git push origin gh-pages
 
-    * Make some arbitrary change in a file in the `docs_source` directory on your master branch and push the changes.
-    * Check that the github action for making documentation ran successfully. If it did, you will be able to find your documentation on https://[organization].github.io/[project-name]
+* Make some arbitrary change in a file in the `docs_source` directory on your master branch and push the changes.
+* Check that the github action for making documentation ran successfully. If it did, you will be able to find your documentation on https://[organization].github.io/[project-name]
 
 
 Step 7: Make a dev-branch
