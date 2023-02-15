@@ -10,3 +10,4 @@ pytest
 hypothesis
 coverage
 pytest-cov
+build

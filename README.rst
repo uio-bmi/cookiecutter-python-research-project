@@ -56,6 +56,13 @@ Now you should be able to import your Python project in any directory on your sy
 
     >>> import yourprojectname
 
+Step 5: Enable Bumpversion (optional)
+***************************************
+* Remove the `.disabled` from `.github/workflows/bumpversion.yml.disabled`
+* In your Github repository go to Settings -> Action -> General -> Workflow permissions and change Workflow permissions to **read and write permissions**.
+
+Now, whenever you push to master, the version will be bumped.
+
 
 Step 5: If you chose to publish automatically to PyPi
 *******************************************************
