@@ -6,6 +6,12 @@ import typer
 
 
 def main():
+    '''
+    Simple function
+
+    >>> main()
+
+    '''
     return
 
 

@@ -1,0 +1,9 @@
+===============================
+ Build Automatic Documentation
+===============================
+
+* Go to https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}/settings/pages
+* Select `Deploy from branch` under `Source`.
+* Select the `gh-pages` branch and the `docs` folder and click Save.
+* Go to https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}/settings/actions
+* Under Workflow permissions, check 'Read and write permissions' and click 'Save'

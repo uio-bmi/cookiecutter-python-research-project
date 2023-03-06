@@ -33,28 +33,7 @@ Create your project from this template by running the following command and foll
 
     cookiecutter https://github.com/.......
 
-Step 3: Make a Github project
-******************************
 
-Setup your project on Github. Create a new project on Github, initialize your repo locally and push it.
-
-* Do not add a Readme, .gitignore or anything else when creating cool.
-
-
-Step 4: Install your project locally
-************************************
-
-Navigate to your project directory. Install the development requirements:
-
-    pip install -r requirements_dev.txt
-
-Install your project locally by running:
-
-    pip install -e .
-
-Now you should be able to import your Python project in any directory on your system:
-
-    >>> import yourprojectname
 
 Step 5: Enable Bumpversion (optional)
 ***************************************
