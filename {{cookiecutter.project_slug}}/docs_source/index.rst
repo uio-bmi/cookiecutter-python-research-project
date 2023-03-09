@@ -1,6 +1,9 @@
 Welcome to {{ cookiecutter.project_name }}'s documentation!
 ======================================
 
+.. include:: installation.rst
+.. include:: usage.rst
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
