@@ -5,7 +5,7 @@
 import typer
 
 
-def main():
+def main_function():
     '''
     Simple function
 
@@ -15,5 +15,9 @@ def main():
     return
 
 
+def main():
+    typer.run(main_function)
+
+
 if __name__ == "__main__":
-    typer.run(main)
+    main()
