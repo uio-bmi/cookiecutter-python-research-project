@@ -7,6 +7,7 @@ then
     git add .gitignore
     git commit -m 'initial commit'
     gh repo create {{cookiecutter.project_slug}} --public --source=. --remote=origin
+    git push --set-upstream origin master
     git checkout -b gh-pages
     git push origin gh-pages
     git checkout -b dev
