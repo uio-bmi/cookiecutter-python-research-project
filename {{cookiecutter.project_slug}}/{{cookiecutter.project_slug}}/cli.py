@@ -5,8 +5,10 @@
 import typer
 
 
-def main():
+def main_function():
     '''
+    This function should just be type hinted with common types,
+    and it will run as a command line function
     Simple function
 
     >>> main()
@@ -15,5 +17,9 @@ def main():
     return
 
 
+def main():
+    typer.run(main_function)
+
+
 if __name__ == "__main__":
-    typer.run(main)
+    main()
