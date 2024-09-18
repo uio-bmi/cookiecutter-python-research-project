@@ -11,7 +11,7 @@ def main_function():
     and it will run as a command line function
     Simple function
 
-    >>> main()
+    >>> main_function()
 
     '''
     return
